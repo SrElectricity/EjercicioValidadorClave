@@ -24,12 +24,11 @@ class ReglaValidacion(ABC):
         return any(c.isdigit() for c in clave)
 
 
-
-class ReglaValidacionGanimedes:
+class ReglaValidacionGanimedes(ReglaValidacion, ABC):
     pass
 
 
-class ReglaValidacionCalisto:
+class ReglaValidacionCalisto(ReglaValidacion, ABC):
     pass
 
 
